@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <section class="text">
@@ -18,22 +20,35 @@
                 Ficou com duvida? <br> Nos mande uma mensagem!
             </h1>
             <p>
-                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
             </p>
         </section>
         <section class="form-section">
             <div class="form">
-                <form action="#" onsubmit="checkInputs()">
-                    <input type="text" name="fullName" id="fullName" placeholder="Nome completo *" class="inputData emptyInput">
-                    <input type="email" name="email" id="email" placeholder="Email *" class="inputData">
-                    <input type="tel" name="phone" id="phone" placeholder="Telefone *" class="inputData">
-                    <textarea name="description" id="description" placeholder="Mensagem *" class="inputData"></textarea>
+                <form action="#">
+                    <div class="inputDiv ">
+                        <input type="text" name="fullName" id="fullName" placeholder="Nome completo *"
+                            class="inputData ">
+                    </div>
+                    <div class="inputDiv">
+                        <input type="email" name="email" id="email" placeholder="Email *" class="inputData ">
+                    </div>
+                    <div class="inputDiv">
+                        <input type="tel" name="phone" id="phone" placeholder="Telefone *" class="inputData ">
+                    </div>
+                    <div class="inputDiv">
+                        <textarea name="description" id="description" placeholder="Mensagem *"
+                            class="inputData ">
+                        </textarea>
+                    </div>
                     <p class="observation">*campos obrigatórios</p>
-                    <button type="submit" class="submitBtn">Enviar</button>
+                    <button type="button" onclick="checkInputs()" class="submitBtn">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
     <script src="js/index.js"></script>
 </body>
+
 </html>

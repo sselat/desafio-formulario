@@ -89,18 +89,25 @@ textarea {
 .submitBtn:hover {
     filter:brightness(1.1)
 }
-
 .emptyInput {
     border-color: red;
+}
+div.inputDiv {
     position: relative;
 }
-.emptyInput::after{
+div.inputDiv.emptyInput::after{
     content: 'Campo obrigatório';
     color: red;
-    display: block;
+    display: inline-block;
     font-size: 8px;
     font-weight: 400;
-    width: 66px;
+    width: 70px;
     height: 9px;
+    bottom: -10px;
+    left: 0;
     position: absolute;
+}
+
+.inputData.validInput {
+    border-color: #00C22B;
 }
