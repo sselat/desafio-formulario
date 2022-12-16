@@ -7,7 +7,7 @@
 main {
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('/img/bg-repeat.jpg');
+    background-image: url('../img/bg-repeat.jpg');
     background-size: contain;
     background-position: center;
     display: flex;
